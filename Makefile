@@ -1,4 +1,4 @@
-IMAGE_VERSION=1.10
+IMAGE_VERSION=1.13.3
 IMAGE_NAME=chrisgarrett/nginx
 
 all: build
