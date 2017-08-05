@@ -22,8 +22,6 @@ RUN apk --no-cache add -U \
   && rm dockerize-alpine-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
 
   && chown nginx:nginx /home/nginx/.bashrc /home/nginx/.vimrc \
-  && ln -sf /usr/bin/vim /usr/bin/vi \
-
-  && echo "daemon off;" >> /etc/nginx/nginx.conf
+  && ln -sf /usr/bin/vim /usr/bin/vi 
 
 #USER nginx
