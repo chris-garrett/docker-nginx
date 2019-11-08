@@ -1,9 +1,9 @@
 # docker-nginx
 
-* Nginx image 1.13.3
+* Nginx image 1.16.1
 
 ## Versions
-- nginx/alpine 1.13.3
+- nginx/alpine 1.16.1
 
 ## Usage
 

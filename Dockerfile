@@ -1,8 +1,8 @@
-FROM nginx:1.13.3-alpine
+FROM nginx:1.16.1-alpine
 MAINTAINER Chris Garrett (https://github.com/chris-garrett/docker-nginx)
-LABEL description="Nginx image 1.13.3"
+LABEL description="Nginx image 1.16.1"
 
-ARG DOCKERIZE_VERSION=v0.5.0
+ARG DOCKERIZE_VERSION=v0.6.1
 COPY ./bash_aliases /home/nginx/.bashrc
 COPY ./vimrc /home/nginx/.vimrc
 
