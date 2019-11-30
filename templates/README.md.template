@@ -1,12 +1,20 @@
 # docker-nginx
 
-* Nginx image ${VERSION}
+* Nginx image ${IMAGE_VERSION}
 
 ## Versions
-- nginx/alpine ${VERSION}
+- nginx ${NGINX_VERSION} (unprivileged) on alpine 
+  - https://github.com/nginxinc/docker-nginx-unprivileged
+  - https://hub.docker.com/r/nginxinc/nginx-unprivileged
+- dockerize ${DOCKERIZE_VERSION}
 
 ## Usage
 
-```docker run --rm -v `pwd`/src:/app/src chrisgarrett/nginx```
+```docker run --rm -it -p 80:80 chrisgarrett/nginx:${IMAGE_VERSION}```
 
 ## Credits
+
+I used Andrew's Dockerfile as the starting point
+
+https://github.com/andrewnk/docker-alpine-nginx-modsec/blob/master/Dockerfile
+
