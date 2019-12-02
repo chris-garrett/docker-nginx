@@ -1,6 +1,6 @@
 export NGINX_VERSION=1.17.6
 export DOCKERIZE_VERSION=v0.6.1
-export IMAGE_VERSION=${NGINX_VERSION}r0
+export IMAGE_VERSION=${NGINX_VERSION}
 export IMAGE_NAME=chrisgarrett/nginx
 
 

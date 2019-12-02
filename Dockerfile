@@ -90,7 +90,7 @@ RUN chown -R nginx:nginx /usr/share/nginx /etc/nginx
 
 FROM nginxinc/nginx-unprivileged:1.17.6-alpine
 MAINTAINER Chris Garrett (https://github.com/chris-garrett/docker-nginx)
-LABEL description="Nginx image 1.17.6r0"
+LABEL description="Nginx image 1.17.6"
 
 USER root
 
@@ -128,8 +128,8 @@ RUN apk upgrade --no-cache \
 
 # From nginx:unprivileged repo
 # nginx user must own the cache directory to write cache
-RUN chown -R 101:0 /var/cache/nginx \
-    && chmod -R g+w /var/cache/nginx
+RUN chown -R 101:0 /var/cache/nginx /etc/nginx/conf.d \
+    && chmod -R g+w /var/cache/nginx /etc/nginx/conf.d
 
 RUN mkdir -p /var/log/modsec \
   && chown -R nginx:nginx /var/log/modsec

@@ -1,6 +1,6 @@
 # docker-nginx
 
-* Nginx image 1.17.6r0
+* Nginx image 1.17.6
 
 ## Versions
 - nginx 1.17.6 (unprivileged) on alpine 
@@ -10,7 +10,7 @@
 
 ## Usage
 
-```docker run --rm -it -p 8080:8080 chrisgarrett/nginx:1.17.6r0```
+```docker run --rm -it -p 8080:8080 chrisgarrett/nginx:1.17.6```
 
 ## Credits
 
